@@ -31,7 +31,19 @@ Use this skill when the user asks for any of the following:
 4. score answers with four GEO metrics: mention, positive mention, capability accuracy, and ecosystem accuracy;
 5. map target models to probable datasource channels and plan content placement;
 6. diagnose wrong, negative, outdated, or competitor-only answers;
-7. create a repair plan and define T+7 or T+14 regression checks.
+7. create a repair plan and define T+7 or T+14 regression checks;
+8. help a user choose the correct beginner path before running the workflow.
+
+## Beginner Entry
+
+If the user is at the start of adoption, use this order.
+
+| Situation | What to do first |
+|---|---|
+| User is unsure whether the repo is ready | run `make doctor` |
+| User wants a zero-cost first result | run `bash quickstart.sh` |
+| User wants a short onboarding page | open `docs/for-beginners.md` |
+| User wants the full explanation | open `docs/getting-started.md` |
 
 ## GEO Strategy
 
@@ -44,6 +56,16 @@ Always follow this order unless the user explicitly narrows scope.
 | Placement | Map each model to likely datasource surfaces and publishing channels | Channel priorities, publishing backlog |
 | Repair | Classify negative answers and propose source-level fixes | Repair type, action owner, target queries |
 | Regression | Re-run the same queries and compare T+7 or T+14 changes | Follow-up metrics, deltas, next actions |
+
+## Mode Selection
+
+Choose the execution mode before running monitoring.
+
+| Mode | Use when | Typical inputs |
+|---|---|---|
+| Quickstart replay | user wants the fastest first run with no API setup | sample model config + sample manual responses |
+| Manual paste mode | user already has copied answers from external chat tools | Query Pool + manual response JSON |
+| API collection mode | user wants repeatable real monitoring | Query Pool + model config + API credentials |
 
 ## Input Contract
 
