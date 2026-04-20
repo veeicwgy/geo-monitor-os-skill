@@ -117,3 +117,10 @@ At the end of the run, preserve these outputs whenever they are in scope.
 ## Positioning
 
 Use this skill when the user needs a **GEO monitoring operating system for developer tools** rather than a generic SEO content writer. The differentiation is that this skill centers on **monitoring, scoring, repair, and regression**, while still connecting those outputs to content placement and publish-ready remediation.
+
+## Repository Language Entry
+
+| Need | Path |
+|---|---|
+| English repository overview | `README.md` |
+| Chinese repository overview | `README.zh-CN.md` |
